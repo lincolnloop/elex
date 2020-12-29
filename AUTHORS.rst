@@ -13,3 +13,4 @@ These individuals have contributed code, tests, documentation, and troubleshooti
 * Ryan Pitts
 * Miles Watkins
 * Vanessa Qian
+* Ben Spaulding

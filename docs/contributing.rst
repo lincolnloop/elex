@@ -30,6 +30,7 @@ Install Elex development environment
 
   pip install -r requirements.txt
   pip install -r requirements-dev.txt
+  pip install -e .
 
 
 Running tests
@@ -45,7 +46,7 @@ Make sure all tests are passing in your environment by running the nose2 tests.
 
    make test
 
-If you have Python 2.7, 3.6, and pypy installed, run can run :code:`tox` to test in multiple environments.
+If you have Python 3.6, 3.7, 3.8, 3.9 and pypy3 installed, run can run :code:`tox` to test in multiple environments.
 
 Writing docs
 ============

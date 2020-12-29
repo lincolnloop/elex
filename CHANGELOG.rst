@@ -1,3 +1,10 @@
+2.5.0 - December 28, 2020
+-------------------------
+
+* Drop Python 2 support
+* Add Python 3.7, 3.8, and 3.9 support
+* Update pinned requirements
+
 2.4.0 - October 23, 2016
 ------------------------
 
