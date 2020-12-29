@@ -3,4 +3,4 @@ sphinx-rtd-theme==0.1.9
 
 nose2
 tox
-flake8
+flake8~=3.8.4

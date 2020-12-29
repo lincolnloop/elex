@@ -1,6 +1,5 @@
 import os
 import unittest
-import tests
 
 from elex.cli.app import ElexApp
 from requests.exceptions import HTTPError
@@ -54,7 +53,10 @@ class TestRaceResultsOfficeIdParsing(NetworkTestCase):
         data_all = all_races.json()
         self.assertLess(len(data_w_officeids['races']), len(data_all['races']))
 
-        raceids_filter_ph_in_all = [elem['raceID'] for elem in data_all['races'] if elem['officeID'] == 'P' or elem['officeID'] == 'H']
+        raceids_filter_ph_in_all = [
+            elem['raceID'] for elem in data_all['races']
+            if elem['officeID'] == 'P' or elem['officeID'] == 'H'
+        ]
         raceids_w_officeids = [elem['raceID'] for elem in data_w_officeids['races']]
         self.assertEqual(raceids_filter_ph_in_all, raceids_w_officeids)
 
